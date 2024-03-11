@@ -1,0 +1,11 @@
+---
+- name: copy a file
+  hosts: all 
+  become: true
+  tasks:
+  - name: copy a file
+    copy:
+      src: /home/ansadmin/ansible-playbooks/index.html
+      dest: /home/ansadmin/dir1
+      mode: 0755
+      owner: ansadmin  

@@ -1,0 +1,10 @@
+---
+- name: install only package
+  hosts: all
+  become: true
+  tasks:
+   - name: install package
+     yum:
+      name: tree
+      state: installed
+
